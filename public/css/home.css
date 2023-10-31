@@ -119,6 +119,7 @@ footer{
 
 .icon__footer{
     color: var(--color-celeste);
+    margin-bottom: 20px;
     text-align: center;
     font-size: 50px;
     width: 100%;
