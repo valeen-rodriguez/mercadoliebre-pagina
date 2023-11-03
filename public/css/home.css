@@ -30,18 +30,17 @@
 }
 
 .search{
-    margin-left: 10px;
-    margin-right: 200px;
-    margin-top: 10px;
+    display: flex;
+    width: 30%;
+    margin-top: 5%;
+    height: 30px;
+    margin-right: 1px;
 }
-
-.search input{
-    width: 160px;
-}
-
 .search button{
-    width: 22px;
-    display: block;
+    margin-left: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px 5px 5px 5px ;
 }
 
 .compra_titulo{
@@ -78,20 +77,35 @@ footer{
 }
 
 #seccion_titulo{
-    color: #666;
+    background-color: var(--color-verde);
+    color: #FFF;
     font: bold;
     font-size: 30px;
-    margin-left: 5px;
+
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.icono_camion{
-    font-size: 25px;
+#circulo{
+    display: block;
+    font-size: 40px;
     color: var(--color-verde);
-    margin-top: 10px;
-    margin-bottom: 23px;
+    position: absolute;
+    width: 60px;
+    margin-top: -18px;
+    right: 25px;
+    background-color: white;
+    border-radius: 100%;
+}
+#camion{
+    display: block;
+    font-size: 18px;
+    color: var(--color-verde);
+    position: absolute;
+    width: 60px;
+    margin-top: -7px;
+    right: 15px;
 }
 
 .article__productos{
@@ -99,11 +113,18 @@ footer{
     padding: 15px;
 }
 
+
 .info_productos{
-    text-align: center;
+    text-align: left;
+    font-size: 17px;
     padding: 15px;
     margin: 30px 10px;
     background-color: white;
+}
+
+.precio_descuesto_producto{
+    padding: 3px;
+    font-size: 15px;
 }
 
 .descuento_off{
@@ -112,7 +133,7 @@ footer{
 }
 
 .descripcion_abajo{
-    margin-top: 30px;
+    margin-top: 40px;
     color: var(--color-gris-oscuro);
     display: none;
 }
@@ -140,7 +161,7 @@ footer{
     margin-left: 5px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 426px){
     #nav1_home{
         display: initial;
         padding-bottom: 20px;
@@ -158,4 +179,152 @@ footer{
     .descripcion_abajo{
         display: initial;
     }
+}
+
+@media (min-width: 768px){
+    .imagen_logo{
+        margin-bottom: 30px;
+    }
+    .nav_class{
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra_titulo{
+        max-width: 350px;
+    }
+    .search{
+        display: flex;
+        width: 30%;
+        margin-top: 5%;
+        height: 30px;
+        margin-right: 1px;
+    }
+    .search button{
+        margin-left: 12px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px 5px 5px 5px ;
+    }
+    #nav1_home {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        float: left;
+    }
+    
+    #nav2_home {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        float: right;
+    }
+
+    li{
+        padding: 10px;
+    }
+
+    .compra_titulo{
+        text-align: right;
+        margin-top: 20px;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    .contenedor_principal {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info_productos {
+        width: 45%;
+    }
+    .info_productos {
+        position: relative;
+    }
+    .search{
+        display: flex;
+        width: 30%;
+        margin-top: 5%;
+        height: 30px;
+        margin-right: 1px;
+    }
+    .search button{
+        margin-left: 12px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px 5px 5px 5px ;
+    }
+    .footer_par{
+        display: flex;
+        flex: 1;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .compra_titulo{
+        text-align: right;
+        margin-top: 20px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .contenedor_principal {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .info_productos {
+        width: 25%;
+    }
+    .info_productos {
+        position: relative;
+    }
+    .footer_par{
+        display: flex;
+        flex: 1;
+        padding: 20px;
+    }
+    .div__footer__home p{
+        margin-top: 15px;
+    }
+    
+    #nav1_home {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        margin-inline: 40px;
+        float: left;
+    }
+    
+    #nav2_home {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        margin-inline: 40px;
+        float: right;
+    }
+
+    li{
+        padding: 10px;
+    }
+    .search{
+        display: flex;
+        width: 30%;
+        margin-top: 5%;
+        height: 20px;
+        margin-right: 1px;
+        margin-left: 100px;
+    }
+    .search button{
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px 5px 5px 5px ;
+    }
+    
 }
