@@ -1,0 +1,106 @@
+
+.main_register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form_general{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+#informacion_dato{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 25px;
+}
+
+#informacion__datos{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 25px;
+}
+
+.titulo_nacimiento{
+    margin-bottom: 13px;
+}
+
+.titulo_perfil_usuario{
+    margin-bottom: 13px;
+}
+
+#vendedor_compra_titulo{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#comprador_primero{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#vendedor_primero{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#intereses_titulo{
+    margin-bottom: 15px;
+}
+
+#opciones_eleccion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#foto_usuario{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+#enviar_boton{
+    margin-left: 10%;
+    width: 20%;
+}
+
+#borrar_boton{
+    width: 20%;
+    margin-left: 15%;
+}
+
+@media (min-width: 426px){
+    .main_register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+    }
+    #comprador_primero{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 768px){
+    #comprador_primero{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #vendedor_primero{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+}
