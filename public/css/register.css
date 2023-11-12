@@ -10,8 +10,8 @@
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
     padding: 20px;
+    width: 500px;
 }
 
 #informacion_dato{
@@ -32,10 +32,12 @@
 }
 
 .titulo_nacimiento{
+    font-weight: bolder;
     margin-bottom: 13px;
 }
 
 .titulo_perfil_usuario{
+    font-weight: bolder;
     margin-bottom: 13px;
 }
 
@@ -56,6 +58,7 @@
 }
 
 #intereses_titulo{
+    font-weight: bolder;
     margin-bottom: 15px;
 }
 

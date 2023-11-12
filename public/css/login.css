@@ -28,6 +28,12 @@
     margin-top: 10px;
 }
 
+@media (min-width: 426px){
+    .form_general {
+        width: 50%;
+    }
+}
+
 @media (min-width: 768px){
     #inicio_sesion{
         width: 100%;
