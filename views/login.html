@@ -15,7 +15,7 @@
         <img class="imagen_logo" src="/img/logo-mercado-liebre.svg" alt="logo" width="240px">
         <section class="search">
             <form action="">
-                <input type="text" placeholder="Buscar productos, marcas">
+                <input type="text" id="barra_busqueda" placeholder="Buscar productos, marcas">
             </form>
             <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
             </button>
@@ -40,17 +40,17 @@
             </div>
     </header>
 <main class="main_register">
-    <form class="form_general">
+    <form action="/login" method="post" class="form_general">
     <p>
-    <input name="nombre-usuario" id="inicio_sesion" placeholder="Nombre de usuario">
+    <input name="nombre-usuario" id="inicio_sesion" placeholder="Nombre de usuario" required>
     </p>
     
     <p>
-    <input name="contraseña" id="inicio_sesion" placeholder="Elegí tu contraseña">
+    <input type="password" name="contraseña" id="inicio_sesion" placeholder="Elegí tu contraseña" required>
     </p>
 
     <p>
-    <a href="http://localhost:2000/"> <input id="enviar_inicio" type="submit" value="Enviar"> </a>
+    <a href="http://localhost:2000"> <input id="enviar_inicio" type="submit" value="Enviar"> </a>
     </p>
     </form>
 </main>

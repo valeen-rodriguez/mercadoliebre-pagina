@@ -32,15 +32,24 @@
 .search{
     display: flex;
     width: 30%;
-    margin-top: 5%;
     height: 30px;
     margin-right: 1px;
+    justify-content: left;
+    padding: 40px;
 }
+
+#barra_busqueda{
+    width: 200px;
+    height: 25px;
+    border: none;
+}
+
 .search button{
     margin-left: 12px;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 25px;
     border-radius: 5px 5px 5px 5px ;
+    border: none;
 }
 
 .compra_titulo{
@@ -156,11 +165,11 @@ footer{
     font-size: 50px;
     width: 100%;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .icon__footer:hover{
-    color: #001258;
+    color: var(--color-amarillo);
 }
 
 .div__footer__home{
@@ -217,13 +226,12 @@ footer{
     .search{
         display: flex;
         width: 30%;
-        margin-top: 5%;
         height: 30px;
         margin-right: 1px;
     }
     .search button{
         margin-left: 12px;
-        width: 20px;
+        width: 50px;
         height: 20px;
         border-radius: 5px 5px 5px 5px ;
     }
@@ -267,15 +275,20 @@ footer{
     .search{
         display: flex;
         width: 30%;
-        margin-top: 5%;
         height: 30px;
         margin-right: 1px;
     }
+    #barra_busqueda{
+        width: 200px;
+        height: 25px;
+        border: none;
+    }
     .search button{
         margin-left: 12px;
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 25px;
         border-radius: 5px 5px 5px 5px ;
+        border: none;
     }
     .footer_par{
         display: flex;
@@ -336,16 +349,13 @@ footer{
     .search{
         display: flex;
         width: 30%;
-        margin-top: 5%;
         height: 20px;
         margin-right: 1px;
-        margin-left: 100px;
     }
-    .search button{
-        margin-left: 20px;
-        width: 20px;
-        height: 20px;
-        border-radius: 5px 5px 5px 5px ;
+    #barra_busqueda{
+        width: 300px;
+        height: 25px;
+        border: none;
     }
     
 }
