@@ -87,26 +87,27 @@ footer{
     margin-bottom: 20px;
 }
 
-#circulo{
-    display: block;
-    font-size: 40px;
-    color: var(--color-verde);
-    position: absolute;
-    width: 60px;
-    margin-top: -18px;
-    right: 25px;
-    background-color: white;
-    border-radius: 100%;
-}
 #camion{
     display: block;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 6px;
+    width: 38px;
+    height: 35px;
     color: var(--color-verde);
-    position: absolute;
-    width: 60px;
-    margin-top: -7px;
-    right: 15px;
+    border: 1px solid var(--color-verde);
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    top: 15px;
+    transition: 0.6s;
 }
+
+#camion:hover{
+    transform: rotateZ(-90deg);
+    transition: all 700ms;
+}
+
 
 .article__productos{
     border-top: 1px solid #ebebeb;
@@ -120,6 +121,13 @@ footer{
     padding: 15px;
     margin: 30px 10px;
     background-color: white;
+}
+
+.info_productos:hover{
+    cursor: default;
+    .descripcion_abajo{
+        opacity: 1;
+    }
 }
 
 .precio_descuesto_producto{
@@ -136,6 +144,9 @@ footer{
     margin-top: 40px;
     color: var(--color-gris-oscuro);
     display: none;
+    opacity: 0;
+    transition: all 550ms;
+
 }
 
 .icon__footer{
@@ -144,6 +155,12 @@ footer{
     text-align: center;
     font-size: 50px;
     width: 100%;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.icon__footer:hover{
+    color: #001258;
 }
 
 .div__footer__home{
@@ -173,9 +190,6 @@ footer{
     .burger-menu{
         display: none;
     }
-    .info_productos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
     .descripcion_abajo{
         display: initial;
     }
@@ -191,6 +205,14 @@ footer{
     }
     .compra_titulo{
         max-width: 350px;
+    }
+    .info_productos{
+        box-shadow: 0px 0px 7px rgb(180, 180, 180);
+        transition: 0.6s;
+    }
+    .info_productos:hover{
+        box-shadow: 5px 10px 15px rgb(150, 150, 150);
+        transition: all 400ms;
     }
     .search{
         display: flex;
@@ -273,7 +295,6 @@ footer{
         display: flex;
         flex-wrap: nowrap;
     }
-    
     .info_productos {
         width: 25%;
     }
